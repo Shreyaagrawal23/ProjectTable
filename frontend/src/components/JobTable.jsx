@@ -5,7 +5,7 @@ const JobTable = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/jobs")
+    fetch("https://projecttabl.onrender.com/api/jobs")
       .then((response) => response.json())
       .then((data) => {
         setJobs(data);
